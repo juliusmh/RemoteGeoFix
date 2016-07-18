@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">RemoteGeoFix</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="no_cmd_provided">No Command Provided (param "cmd")</string>
+    <string name="no_lat_provided">No Latitude defined (param "lat")</string>
+    <string name="no_lon_provided">No Longitutde defined (param "lng")</string>
+
+    <string name="unknown_error">KO</string>
+
+    <string name ="status_ok">OK</string>
+
+</resources>
