@@ -7,9 +7,9 @@ The user just has to open the Browser, browse to his mobile and he can "walk" si
 using WASD on the map.
 
 So how does it work:
-1. Enable Mock Location Providers on your Android phone under "Developer Options"
-2. Find out the IP Address of your mobile and connect to it via your Browser (Port: 4444)
-3. If the page loads your ready to go! Click somewhere you wanna go
+* Enable Mock Location Providers on your Android phone under "Developer Options"
+* Find out the IP Address of your mobile and connect to it via your Browser (Port: 4444)
+* If the page loads your ready to go! Click somewhere you wanna go
 
 Usefull info:
 
