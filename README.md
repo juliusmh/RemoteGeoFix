@@ -11,7 +11,10 @@ So how does it work:
 * Find out the IP Address of your mobile and connect to it via your Browser (Port: *4444*)
 * If the page loads your ready to go! Click somewhere you wanna go
 
-The backend uses a restfull api which responds in plaintext:
+* __Pro TIP : __ Dont "move" to fast as the requests are kind of slow due to http things and the google api.. 
+
+# Api
+The backend uses a restfull api which responds to your GET requests in plaintext:
 * __api/?cmd=heartbeet&lat=50&lng=50__ Keep alive package, needs to be send every ~10s
 * __api/?cmd=fix&lat=X&lng=y__         Set the new Location fix at latitude and longitude, the altitude is queried by the backend which talks to the google elevation api
 * __api/?cmd=exit__                    Will shutdown the httpd service and the MockLocation Service
