@@ -12,10 +12,17 @@ So how does it work:
 * If the page loads your ready to go! Click somewhere you wanna go
 
 The backend uses a restfull api which responds in plaintext:
-* _api/?cmd=heartbeet&lat=50&lng=50_ // Keep alive package, needs to be send every ~10s
-* _api/?cmd=fix&lat=X&lng=y_         // Set the new Location fix at latitude and longitude, the altitude is queried by the backend which talks to the google elevation api
-* _api/?cmd=exit_                    // Will shutdown the httpd service and the MockLocation Service
+* __api/?cmd=heartbeet&lat=50&lng=50__ Keep alive package, needs to be send every ~10s
+* __api/?cmd=fix&lat=X&lng=y__         Set the new Location fix at latitude and longitude, the altitude is queried by the backend which talks to the google elevation api
+* __api/?cmd=exit__                    Will shutdown the httpd service and the MockLocation Service
 
-# Dirty Code, I know
-I just needed a very quick solution to cheat on Pokemon Go, so here you got. But install the
-"Mock Mock Location" package for the Xposed framework first as Pokemon Go wont start without.
+# Todo
+I just needed a very quick solution to cheat on Pokemon Go, so here is the result (But install the
+"Mock Mock Location" package for the Xposed framework first as Pokemon Go wont start without) .
+Im going to develop the code further and even publish an finished app. Things to come are for sure:
+* Not a ui standard preset, not the mail button, not these colors.. An UI is going to come, in Material design (its going to be awesome)
+* An Icon
+* A settings panel for changing some parameters (e.g. fetchAltitude, httpdPort, ...) -> SharedPreferences
+* A real Service implementation that is robust (my Httpd Server is kind of dirty and initialized on the ui thread)
+* More administrative functions through the web
+* A production ready app for geeks and cheaters that is easy to use but flexible
