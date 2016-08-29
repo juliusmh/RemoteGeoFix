@@ -15,7 +15,7 @@ So how does it work:
 
 # Api
 The backend uses a restfull api which responds to your GET requests in plaintext:
-* __api/?cmd=heartbeet&lat=50&lng=50__ Keep alive package, needs to be send every ~10s
+* __api/?cmd=heartbeet__ Keep alive package, needs to be send every ~10s
 * __api/?cmd=fix&lat=X&lng=y__         Set the new Location fix at latitude and longitude, the altitude is queried by the backend which talks to the google elevation api
 * __api/?cmd=exit__                    Will shutdown the httpd service and the MockLocation Service
 
